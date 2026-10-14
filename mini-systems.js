@@ -26,8 +26,25 @@
     try { localStorage.setItem(key, JSON.stringify(data)); }
     catch { /* Forms still work if storage is unavailable. */ }
   }
-  function notify(message) {
-    if (typeof showToast === 'function') showToast(message);
+  function notify(message, undo) {
+    if (typeof showToast === 'function') showToast(message, undo);
+  }
+  function replaceRows(target, fragment) {
+    const focused = target.contains(document.activeElement) ? document.activeElement : null;
+    const id = focused?.dataset.id;
+    const action = focused?.dataset.action;
+    const controls = [...target.querySelectorAll('button, input')];
+    const index = controls.indexOf(focused);
+    target.replaceChildren(fragment);
+    if (!focused) return;
+    const nextControls = [...target.querySelectorAll('button, input')];
+    const matching = nextControls.find(control => control.dataset.id === id && control.dataset.action === action && !control.disabled);
+    const next = matching || nextControls.slice(Math.max(0, index)).find(control => !control.disabled) || nextControls.find(control => !control.disabled);
+    if (next) next.focus({ preventScroll: true });
+    else {
+      target.tabIndex = -1;
+      target.focus({ preventScroll: true });
+    }
   }
   function makeText(tag, className, content) {
     const node = document.createElement(tag);
@@ -44,7 +61,7 @@
     return button;
   }
   function showEmpty(target, message) {
-    target.replaceChildren(makeText('p', 'lab-empty', message));
+    replaceRows(target, makeText('p', 'lab-empty', message));
   }
 
   // Accessible tablist: mouse, keyboard arrows, Home and End.
@@ -130,7 +147,7 @@
       row.append(icon, details, amount, actions);
       fragment.append(row);
     });
-    target.replaceChildren(fragment);
+    replaceRows(target, fragment);
   }
   el('#inventory-form').addEventListener('submit', (event) => {
     event.preventDefault();
@@ -159,10 +176,17 @@
     if (action === 'increase') changeStock(id, 1);
     if (action === 'decrease') changeStock(id, -1);
     if (action === 'remove') {
+      const removed = inventory.find(item => item.id === id);
+      const position = inventory.findIndex(item => item.id === id);
       inventory = inventory.filter(item => item.id !== id);
       saveData(STORAGE.inventory, inventory);
       renderInventory();
-      notify('Product removed.');
+      notify('Product removed.', () => {
+        if (!removed || inventory.some(item => item.id === id) || inventory.length >= 250) return;
+        inventory.splice(position, 0, removed);
+        saveData(STORAGE.inventory, inventory);
+        renderInventory();
+      });
     }
   });
   renderInventory();
@@ -218,7 +242,7 @@
       row.append(checkbox, details, priority, remove);
       fragment.append(row);
     });
-    target.replaceChildren(fragment);
+    replaceRows(target, fragment);
   }
   el('#tasks-form').addEventListener('submit', (event) => {
     event.preventDefault();
@@ -238,10 +262,17 @@
   el('#tasks-list').addEventListener('click', (event) => {
     const button = event.target.closest('button[data-action="delete-task"]');
     if (!button) return;
+    const removed = tasks.find(task => task.id === button.dataset.id);
+    const position = tasks.findIndex(task => task.id === button.dataset.id);
     tasks = tasks.filter(task => task.id !== button.dataset.id);
     saveData(STORAGE.tasks, tasks);
     renderTasks();
-    notify('Task removed.');
+    notify('Task removed.', () => {
+      if (!removed || tasks.some(task => task.id === removed.id) || tasks.length >= 250) return;
+      tasks.splice(position, 0, removed);
+      saveData(STORAGE.tasks, tasks);
+      renderTasks();
+    });
   });
   all('[data-task-filter]').forEach(button => button.addEventListener('click', () => {
     taskFilter = button.dataset.taskFilter;
@@ -294,7 +325,7 @@
       row.append(icon, details, score, remove);
       fragment.append(row);
     });
-    target.replaceChildren(fragment);
+    replaceRows(target, fragment);
   }
   el('#grades-form').addEventListener('submit', (event) => {
     event.preventDefault();
@@ -318,10 +349,17 @@
   el('#grades-list').addEventListener('click', (event) => {
     const button = event.target.closest('button[data-action="delete-grade"]');
     if (!button) return;
+    const removed = subjects.find(subject => subject.id === button.dataset.id);
+    const position = subjects.findIndex(subject => subject.id === button.dataset.id);
     subjects = subjects.filter(subject => subject.id !== button.dataset.id);
     saveData(STORAGE.grades, subjects);
     renderGrades();
-    notify('Subject removed.');
+    notify('Subject removed.', () => {
+      if (!removed || subjects.some(subject => subject.id === removed.id) || subjects.length >= 250) return;
+      subjects.splice(position, 0, removed);
+      saveData(STORAGE.grades, subjects);
+      renderGrades();
+    });
   });
   renderGrades();
 
@@ -339,8 +377,11 @@
         helper.style.opacity = '0';
         document.body.appendChild(helper);
         helper.select();
-        if (!document.execCommand('copy')) throw new Error('Copy unavailable');
-        helper.remove();
+        try {
+          if (!document.execCommand('copy')) throw new Error('Copy unavailable');
+        } finally {
+          helper.remove();
+        }
       }
       notify('JavaScript snippet copied!');
     } catch {

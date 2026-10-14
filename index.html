@@ -1,179 +1,186 @@
+
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#0b0e19" />
-  <meta name="description" content="Meet Love Joy Angeles Itable — an IT graduate and creative web developer building thoughtful digital experiences." />
-  <meta property="og:title" content="Love Joy Angeles Itable | Creative Developer" />
-  <meta property="og:description" content="The portfolio of Love Joy Angeles Itable — BSIT graduate of Rizal Technological University." />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta name="theme-color" content="#100d1c" />
+
+  <meta
+    name="description"
+    content="Love Joy Angeles Itable — web developer building useful, reliable applications. Selected projects, tech stack, and interactive JavaScript demos."
+  />
+
+  <meta
+    property="og:title"
+    content="Love Joy Itable — Web Developer"
+  />
+
+  <meta
+    property="og:description"
+    content="Selected web projects and interactive experiments by Love Joy Angeles Itable."
+  />
+
   <meta property="og:type" content="website" />
+
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="mini-systems.css" />
+  <link rel="stylesheet" href="motion.css" />
+
+  <!-- JavaScript -->
   <script defer src="script.js"></script>
   <script defer src="mini-systems.js"></script>
-  <title>Love Joy Angeles Itable — Creative Developer</title>
+
+  <title>Love Joy Itable — Web Developer</title>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="site-glow" aria-hidden="true"></div>
   <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
 
   <header class="site-header" id="top">
     <div class="container nav-wrap">
-      <a class="brand" href="#top" aria-label="Love Joy Itable, back to top"><span class="brand-mark">LJ<span>.</span></span><span class="brand-label">creative developer</span></a>
+      <a class="brand" href="#top" aria-label="Love Joy Itable, go to top">
+        <span class="brand-prompt" aria-hidden="true">~/</span><span class="brand-mark">lovejoy<span>.dev</span></span>
+      </a>
       <nav id="primary-nav" class="nav-links" aria-label="Main navigation">
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#mini-systems">Mini apps</a>
-        <a href="#journey">Journey</a>
-        <a href="#contact" class="mobile-contact">Let's talk <span aria-hidden="true">↗</span></a>
+        <a href="#skills">Stack</a>
+        <a href="#mini-systems">Playground</a>
+        <a href="#journey">Timeline</a>
+        <a href="#contact" class="mobile-contact">Contact ↗</a>
       </nav>
       <div class="nav-actions">
-        <button class="icon-button theme-toggle" id="theme-toggle" aria-label="Switch to light theme" title="Toggle color theme" type="button">
+        <button class="icon-button theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch color theme">
           <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
           <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 14.5A8.5 8.5 0 0 1 9.5 3.7 8.5 8.5 0 1 0 20.3 14.5Z"/></svg>
         </button>
-        <a class="nav-cta" href="#contact">Let's connect <span aria-hidden="true">↗</span></a>
-        <button class="icon-button menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">
-          <span></span><span></span><span></span>
-        </button>
+        <a class="nav-cta" href="mailto:itablelove@gmail.com">Let's talk <span aria-hidden="true">↗</span></a>
+        <button class="icon-button menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button>
       </div>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero section" aria-labelledby="hero-heading">
-      <div class="hero-grid container">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
         <div class="hero-copy">
-          <div class="eyebrow hero-eyebrow"><span class="pulse-dot"></span> HELLO, WORLD! I'M LOVE JOY <span class="eyebrow-spark">✳</span></div>
-          <h1 id="hero-heading">Turning <span class="word-italic">ideas</span><br/> into <span class="heading-gradient">experiences.</span></h1>
-          <p class="hero-description">I'm <strong>Love Joy Angeles Itable</strong>, a 22-year-old BS Information Technology graduate of <strong>Rizal Technological University</strong>. I love building purposeful, human-centered experiences for the web.</p>
+          <div class="eyebrow hero-eyebrow"><span class="terminal-chevron" aria-hidden="true">&gt;</span> HELLO, I'M LOVE JOY <span class="eyebrow-line" aria-hidden="true"></span> WEB DEVELOPER</div>
+          <h1 id="hero-heading">I build for<br/>the <span>real world.</span></h1>
+          <p class="hero-description">I'm <strong>Love Joy Angeles Itable</strong>, a BS Information Technology graduate who turns everyday problems into usable web applications. I work across interfaces, backend logic, and the details in between.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">Explore my work <span class="button-arrow" aria-hidden="true">↗</span></a>
-            <a class="button button-outline" href="#about">More about me <span aria-hidden="true">↓</span></a>
+            <a class="button button-primary" href="#projects"><span aria-hidden="true">↳</span> Explore projects</a>
+            <a class="button button-outline" href="./CV-ITABLE,LOVE%20JOY%202.pdf" target="_blank" rel="noopener noreferrer">View CV <span aria-hidden="true">↗</span></a>
+            <a class="button button-text cv-download" href="./CV-ITABLE,LOVE%20JOY%202.pdf" download="CV-ITABLE,LOVE JOY 2.pdf">Download CV <span aria-hidden="true">↓</span></a>
           </div>
-          <div class="hero-bottom">
-            <div class="avatar-stack" aria-hidden="true"><span>JS</span><span>PHP</span><span>UI</span></div>
-            <p><strong>Creative mindset.</strong><br/><span>Developer at heart.</span></p>
-            <span class="hero-bottom-separator" aria-hidden="true"></span>
-            <p><span class="tiny-star">✺</span> Based in the Philippines</p>
-          </div>
+          <div class="hero-footnotes"><span><span class="small-status-dot" aria-hidden="true"></span> BASED IN MUNTINLUPA, PH</span><span>SCROLL TO EXPLORE ↓</span><button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="false" hidden>Pause background motion</button></div>
         </div>
-
-        <div class="hero-visual" aria-label="Decorative code-inspired introduction to Love Joy">
-          <div class="orbit orbit-one" aria-hidden="true"></div>
-          <div class="orbit orbit-two" aria-hidden="true"></div>
-          <div class="floating-symbol symbol-one" aria-hidden="true">✳</div>
-          <div class="floating-symbol symbol-two" aria-hidden="true">+</div>
-          <div class="profile-orb" aria-hidden="true">
-            <div class="orb-ring orb-ring-outer"></div>
-            <div class="orb-ring orb-ring-inner"></div>
-            <span class="orb-initials">LJ<span>.</span></span>
-            <div class="orb-subline">DESIGN <span>×</span> DEVELOP</div>
+        <aside class="terminal-window" aria-label="Developer profile terminal">
+          <div class="terminal-topbar"><div class="window-controls" aria-hidden="true"><span></span><span></span><span></span></div><span>developer.json</span><span class="terminal-topbar-right">readonly</span></div>
+          <div class="terminal-content" aria-label="Developer information">
+            <div class="code-line"><span class="code-line-no">01</span><span><span class="syntax-faint">{</span></span></div>
+            <div class="code-line"><span class="code-line-no">02</span><span>&nbsp; <span class="syntax-property">"name"</span>: <span class="syntax-string">"Love Joy Itable"</span>,</span></div>
+            <div class="code-line"><span class="code-line-no">03</span><span>&nbsp; <span class="syntax-property">"role"</span>: <span class="syntax-string">"Web Developer"</span>,</span></div>
+            <div class="code-line"><span class="code-line-no">04</span><span>&nbsp; <span class="syntax-property">"education"</span>: <span class="syntax-string">"BSIT · RTU"</span>,</span></div>
+            <div class="code-line"><span class="code-line-no">05</span><span>&nbsp; <span class="syntax-property">"stack"</span>: [</span></div>
+            <div class="code-line"><span class="code-line-no">06</span><span>&nbsp; &nbsp; <span class="syntax-string">"Laravel"</span>, <span class="syntax-string">"JavaScript"</span>,</span></div>
+            <div class="code-line"><span class="code-line-no">07</span><span>&nbsp; &nbsp; <span class="syntax-string">"MySQL"</span>, <span class="syntax-string">"Tailwind"</span></span></div>
+            <div class="code-line"><span class="code-line-no">08</span><span>&nbsp; ],</span></div>
+            <div class="code-line"><span class="code-line-no">09</span><span>&nbsp; <span class="syntax-property">"approach"</span>: <span class="syntax-string">"Build with care"</span></span></div>
+            <div class="code-line"><span class="code-line-no">10</span><span><span class="syntax-faint">}</span></span></div>
           </div>
-          <div class="float-chip chip-creative"><span class="chip-icon">✦</span><span>Always creating<br/><strong>something meaningful</strong></span></div>
-          <div class="code-card">
-            <div class="code-card-head"><span class="traffic-lights"><i></i><i></i><i></i></span><span>about-me.js</span><span class="code-head-icon">⌘</span></div>
-            <div class="code-lines" aria-hidden="true"><div><span class="line-number">01</span> <span class="token-purple">const</span> developer = {</div><div><span class="line-number">02</span> &nbsp;&nbsp;name: <span class="token-green">'Love Joy'</span>,</div><div><span class="line-number">03</span> &nbsp;&nbsp;passion: <span class="token-green">'Web Dev'</span>,</div><div><span class="line-number">04</span> &nbsp;&nbsp;mindset: <span class="token-green">'Keep Growing'</span></div><div><span class="line-number">05</span> };</div></div>
-          </div>
-          <div class="float-chip chip-education"><span class="chip-emoji">🎓</span><span><strong>BSIT Graduate</strong><br/>Class of 2026</span></div>
-        </div>
+          <div class="terminal-footer"><span><span class="terminal-chevron">$</span> portfolio --status</span><span><span class="small-status-dot" aria-hidden="true"></span> ONLINE</span></div>
+        </aside>
       </div>
-      <div class="hero-footnote container"><span>SCROLL TO EXPLORE</span><span class="scroll-line"></span><span>01 / PORTFOLIO</span></div>
+      <div class="hero-bar container" aria-hidden="true"><span>DESIGN / DEVELOP / ITERATE</span><span>001—007</span></div>
     </section>
 
-    <div class="marquee-shell" aria-label="Technologies I work with">
-      <div class="marquee-track" aria-hidden="true">
-        <span>HTML5</span><b>✳</b><span>CSS3</span><b>✳</b><span>JAVASCRIPT</span><b>✳</b><span>PHP</span><b>✳</b><span>LARAVEL</span><b>✳</b><span>TAILWIND CSS</span><b>✳</b><span>MYSQL</span><b>✳</b><span>MARIADB</span><b>✳</b><span>POSTGRESQL</span><b>✳</b>
-        <span>HTML5</span><b>✳</b><span>CSS3</span><b>✳</b><span>JAVASCRIPT</span><b>✳</b><span>PHP</span><b>✳</b><span>LARAVEL</span><b>✳</b><span>TAILWIND CSS</span><b>✳</b><span>MYSQL</span><b>✳</b><span>MARIADB</span><b>✳</b><span>POSTGRESQL</span><b>✳</b>
-      </div>
-    </div>
-
-    <section id="about" class="section about-section" aria-labelledby="about-heading">
-      <div class="container">
-        <div class="section-kicker reveal"><span class="number-pill">01</span> THE PERSON BEHIND THE CODE</div>
-        <div class="about-layout">
-          <div class="about-heading-block reveal"><h2 id="about-heading">A little bit <br/>about <span class="word-italic muted-purple">me.</span></h2><div class="handdrawn-arrow" aria-hidden="true">↘</div></div>
-          <div class="about-text reveal"><p class="about-lead">Hello! I'm Love Joy, but you can call me <span class="highlight-underline">LJ.</span> <span aria-hidden="true">✦</span></p><p>I graduated with a Bachelor of Science in Information Technology from Rizal Technological University. I enjoy finding the sweet spot between clean design, practical problem-solving, and technology that makes everyday life a little easier.</p><p>From developing full-stack systems to exploring new tools, I approach every project with curiosity, care, and a willingness to learn.</p><div class="about-signature">Made of <span>curiosity</span>, coffee &amp; code <span aria-hidden="true">☕</span></div></div>
-        </div>
-        <div class="about-highlights">
-          <article class="highlight-card reveal"><div class="highlight-icon">✦</div><div><strong>2026</strong><span>BSIT graduate</span></div></article>
-          <article class="highlight-card reveal"><div class="highlight-icon">⌘</div><div><strong>Full-stack</strong><span>Web development interest</span></div></article>
-          <article class="highlight-card reveal"><div class="highlight-icon">↗</div><div><strong>Always</strong><span>Learning and improving</span></div></article>
-        </div>
+    <section class="section about-section" id="about" aria-labelledby="about-heading">
+      <div class="container split-section">
+        <div><p class="section-kicker"><span>01</span> / ABOUT</p><h2 class="section-heading" id="about-heading">More than<br/>the <em>code.</em></h2></div>
+        <div class="about-copy reveal"><p class="about-lead">Thoughtful software starts with understanding the people who use it.</p><p>I enjoy making interfaces that feel clear, building useful backend features, and working through small technical details that improve the experience.</p><p>My internship and e-Kalinga capstone gave me experience developing Laravel applications, managing records, improving workflows, and debugging real web systems.</p><div class="about-facts"><div><span>EDUCATION</span><strong>BSIT · Rizal Technological University</strong></div><div><span>INTERESTS</span><strong>Web apps · UI engineering · Full stack</strong></div></div></div>
       </div>
     </section>
 
-    <section id="skills" class="section skills-section" aria-labelledby="skills-heading">
+    <section class="section projects-section" id="projects" aria-labelledby="projects-heading">
       <div class="container">
-        <div class="section-header reveal"><div><div class="section-kicker"><span class="number-pill">02</span> WHAT I WORK WITH</div><h2 id="skills-heading">My creative <span class="word-italic muted-purple">toolkit.</span></h2></div><p>Tools and technologies I use to turn thoughtful concepts into working digital experiences.</p></div>
-        <div class="skills-grid">
-          <article class="skill-card reveal"><div class="skill-card-top"><span class="skill-glyph">{ }</span><span class="skill-index">01 / 04</span></div><h3>Frontend</h3><p>Making the web beautiful, responsive, and delightful to use.</p><div class="tag-list"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Tailwind CSS</span><span>Bootstrap</span><span>SCSS</span></div></article>
-          <article class="skill-card reveal"><div class="skill-card-top"><span class="skill-glyph">&lt;/&gt;</span><span class="skill-index">02 / 04</span></div><h3>Backend</h3><p>Building the logic and features that make applications work.</p><div class="tag-list"><span>PHP</span><span>Laravel</span><span>Blade</span></div></article>
-          <article class="skill-card reveal"><div class="skill-card-top"><span class="skill-glyph">▤</span><span class="skill-index">03 / 04</span></div><h3>Database</h3><p>Keeping application data organized, useful, and accessible.</p><div class="tag-list"><span>MySQL</span><span>MariaDB</span><span>PostgreSQL</span><span>phpMyAdmin</span></div></article>
-          <article class="skill-card reveal"><div class="skill-card-top"><span class="skill-glyph">⌁</span><span class="skill-index">04 / 04</span></div><h3>Workflow</h3><p>Tools I use to build, test, collaborate, and improve.</p><div class="tag-list"><span>Git</span><span>GitHub</span><span>XAMPP</span><span>Responsive Design</span></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="section projects-section" aria-labelledby="projects-heading">
-      <div class="container">
-        <div class="section-header projects-header reveal"><div><div class="section-kicker"><span class="number-pill">03</span> THINGS I'VE BUILT</div><h2 id="projects-heading">Selected <span class="word-italic muted-purple">work.</span></h2></div><p>A collection of projects where problem-solving, functionality, and creativity come together.</p></div>
+        <div class="section-head reveal"><div><p class="section-kicker"><span>02</span> / WORK</p><h2 id="projects-heading">Selected <em>projects.</em></h2></div><p>Four projects shaped by real workflows, practical questions, and hands-on development.</p></div>
         <div class="project-filters reveal" aria-label="Filter projects">
-          <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All projects <span>04</span></button>
-          <button class="filter-btn" type="button" data-filter="community" aria-pressed="false">Community tech</button>
+          <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All <span>04</span></button>
+          <button class="filter-btn" type="button" data-filter="community" aria-pressed="false">Community</button>
           <button class="filter-btn" type="button" data-filter="management" aria-pressed="false">Management</button>
           <button class="filter-btn" type="button" data-filter="assessment" aria-pressed="false">Assessment</button>
         </div>
         <div class="project-grid" id="project-grid">
           <article class="project-card project-featured reveal" data-category="community">
-            <div class="project-art art-ekalinga" aria-label="Illustrative interface concept for e-Kalinga"><div class="art-shine"></div><div class="mock-window mock-ekalinga"><div class="mock-side"><span class="mock-logo">✳</span><i></i><i></i><i></i><i></i></div><div class="mock-main"><div class="mock-top"><span>e-Kalinga / Dashboard</span><span>● ●</span></div><strong>Community Overview</strong><div class="mock-metrics"><div><small>Registered</small><b>1,248</b></div><div><small>Applications</small><b>326</b></div><div><small>Renewals</small><b>184</b></div></div><div class="mock-chart"><div class="bars"><i style="height:43%"></i><i style="height:65%"></i><i style="height:50%"></i><i style="height:85%"></i><i style="height:71%"></i><i style="height:93%"></i><i style="height:78%"></i></div></div></div></div><span class="art-watermark">eK</span></div>
-            <div class="project-info"><div class="project-meta"><span class="project-number">01 / FEATURED CAPSTONE</span><span class="project-type">Community Platform</span></div><div class="capstone-badge"><span aria-hidden="true">✦</span> BSIT CAPSTONE PROJECT · 2026</div><h3>e-Kalinga <span aria-hidden="true">↗</span></h3><p class="capstone-audience">Developed for the Solo Parent Department of Mandaluyong City</p><p>Our capstone project is a Laravel-based platform designed to support solo-parent applications, membership records, renewals, announcements, appointments, and administrative reporting.</p><div class="project-bottom"><div class="project-tags"><span>Laravel</span><span>Tailwind CSS</span><span>MySQL</span></div><button type="button" class="project-more" data-project="ekalinga" aria-label="Read more about e-Kalinga">Project details <span aria-hidden="true">↗</span></button></div></div>
+            <div class="project-identity"><p class="project-overline">01 / FEATURED CAPSTONE <span class="project-separator">·</span> 2026</p><h3>e-Kalinga<span class="title-period">.</span></h3><p class="project-category">Community services platform</p><p class="project-description">A web-based management system developed for Mandaluyong City's Solo Parent Department—helping organize applications, renewals, member information, appointments, and administrative reporting.</p><div class="project-tags"><span>Laravel</span><span>PHP</span><span>Tailwind CSS</span><span>MySQL</span></div><button type="button" class="project-more" data-project="ekalinga" aria-label="Read more about e-Kalinga">Read case overview <span aria-hidden="true">↗</span></button></div>
+            <div class="workflow-panel" aria-label="e-Kalinga functional areas"><div class="workflow-title"><span>system / e-kalinga</span><span>FEATURE MAP</span></div><div class="workflow-nodes"><div><span class="node-index">01</span><span>Applications</span><span class="node-route">→</span></div><div><span class="node-index">02</span><span>Member records</span><span class="node-route">→</span></div><div><span class="node-index">03</span><span>Annual renewals</span><span class="node-route">→</span></div><div><span class="node-index">04</span><span>Admin reporting</span><span class="node-route">↗</span></div></div><p>FEATURE AREAS · NOT A LIVE SYSTEM SCREENSHOT</p></div>
           </article>
-          <article class="project-card reveal" data-category="management">
-            <div class="project-art art-attendance" aria-label="Illustrative interface concept for Attendance Monitoring System"><div class="mock-attendance"><div class="attend-top"><span><i></i> attend<span class="accent-dot">.</span></span><small>OVERVIEW</small></div><div class="attend-title">Attendance overview</div><div class="attend-stats"><div><small>Present</small><strong>94%</strong><span>↗ +4.2%</span></div><div><small>Today</small><strong>128</strong><span>employees</span></div></div><div class="attend-rows"><span><i></i><b></b><em></em></span><span><i></i><b></b><em></em></span><span><i></i><b></b><em></em></span></div></div></div>
-            <div class="project-info"><div class="project-meta"><span class="project-number">02 / WEB SYSTEM</span><span class="project-type">Management</span></div><h3>Attendance Monitoring <span aria-hidden="true">↗</span></h3><p>A system concept focused on simplifying attendance records and making everyday tracking more organized.</p><div class="project-bottom"><div class="project-tags"><span>Web App</span><span>Records</span></div><button type="button" class="project-more" data-project="attendance" aria-label="Read more about Attendance Monitoring System">Project details <span aria-hidden="true">↗</span></button></div></div>
+          <article class="project-card reveal project-attendance" data-category="management">
+            <p class="project-overline">02 / WEB SYSTEM</p>
+            <h3>Attendify — Attendance Monitoring System</h3>
+            <p class="project-category">Full-Stack Web Application</p>
+            <p class="project-description">A full-stack employee attendance and workforce management system featuring employee account management, secure role-based authentication, real-time clock-in and clock-out, work schedules, vacation leave (VL), sick leave (SL), absence tracking, holiday management, and attendance reports.</p>
+            <div class="project-tags"><span>Laravel</span><span>PHP</span><span>Livewire</span><span>Tailwind CSS</span><span>MySQL</span></div>
+            <div class="project-actions">
+              <a class="button button-outline" href="https://github.com/eljayyit17-afk/attendify" target="_blank" rel="noopener noreferrer">View Source Code <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a>
+              <a class="button button-primary" data-project-demo="attendance" target="_blank" rel="noopener noreferrer" hidden>Open Live System <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a>
+            </div>
+            <button class="project-more" type="button" data-project="attendance" aria-label="Read more about Attendify — Attendance Monitoring System">Read case overview <span aria-hidden="true">↗</span></button>
           </article>
-          <article class="project-card reveal" data-category="management">
-            <div class="project-art art-visitors"><div class="visitor-window"><div class="visitor-hello"><span>Visitors</span><span class="visitor-dot">● LIVE</span></div><div class="visitor-bignum">024 <small>today</small></div><div class="visitor-table"><div><i>○</i><span></span><b>Checked in</b></div><div><i>○</i><span></span><b>Checked in</b></div><div><i>○</i><span></span><b>Checked out</b></div></div></div><div class="visitor-deco">✦</div></div>
-            <div class="project-info"><div class="project-meta"><span class="project-number">03 / WEB SYSTEM</span><span class="project-type">Management</span></div><h3>Visitor Log System <span aria-hidden="true">↗</span></h3><p>A digital visitor-logging project designed to make check-ins and record-keeping easier to manage.</p><div class="project-bottom"><div class="project-tags"><span>Web App</span><span>Tracking</span></div><button type="button" class="project-more" data-project="visitor" aria-label="Read more about Visitor Log System">Project details <span aria-hidden="true">↗</span></button></div></div>
-          </article>
-          <article class="project-card reveal" data-category="assessment">
-            <div class="project-art art-personality"><div class="personality-window"><span class="personality-caption">EXPLORE YOUR PERSONALITY</span><div class="personality-icons"><i>✳</i><i>✧</i><i>✦</i><i>✺</i><i>✳</i></div><strong>The Big Five</strong><p>Understand what makes you, you.</p><div class="personality-meter"><i></i><i></i><i></i><i></i><i></i></div></div></div>
-            <div class="project-info"><div class="project-meta"><span class="project-number">04 / ASSESSMENT APP</span><span class="project-type">Assessment</span></div><h3>Big Five Personality Test <span aria-hidden="true">↗</span></h3><p>An interactive personality assessment project centered on a clear and approachable user experience.</p><div class="project-bottom"><div class="project-tags"><span>Interactive</span><span>Assessment</span></div><button type="button" class="project-more" data-project="bigfive" aria-label="Read more about Big Five Personality Test">Project details <span aria-hidden="true">↗</span></button></div></div>
-          </article>
+          <article class="project-card reveal" data-category="management"><p class="project-overline">03 / WEB SYSTEM</p><h3>Visitor Log<br/>System</h3><p class="project-category">Check-in & digital records</p><p class="project-description">A visitor registration workflow designed to replace repetitive manual logs with a simpler digital process.</p><div class="project-tags"><span>Forms</span><span>Web development</span></div><button class="project-more" type="button" data-project="visitor" aria-label="Read more about Visitor Log System">Read case overview <span aria-hidden="true">↗</span></button></article>
+          <article class="project-card reveal" data-category="assessment"><p class="project-overline">04 / ASSESSMENT PROJECT</p><h3>Big Five<br/>Personality Test</h3><p class="project-category">Interactive questionnaire</p><p class="project-description">An interactive assessment project focused on clarity, approachable questions, and a simple user journey.</p><div class="project-tags"><span>UX</span><span>Interaction</span></div><button class="project-more" type="button" data-project="bigfive" aria-label="Read more about Big Five Personality Test">Read case overview <span aria-hidden="true">↗</span></button></article>
         </div>
-        <p class="project-footnote reveal">* Project illustrations are stylized concepts, not actual application screenshots.</p>
+        <p class="project-footnote">Project descriptions are based on actual work; schematic labels are illustrative rather than screenshots or live usage data.</p>
       </div>
     </section>
 
-    <section id="mini-systems" class="section lab-section" aria-labelledby="lab-heading">
+    <section class="section skills-section" id="skills" aria-labelledby="skills-heading">
       <div class="container">
-        <div class="section-header reveal lab-section-header">
-          <div><div class="section-kicker"><span class="number-pill">04</span> HANDS-ON JAVASCRIPT</div>
-            <h2 id="lab-heading">Mini systems. <span class="word-italic muted-purple">Real code.</span></h2></div>
-          <p>Go beyond screenshots. Try three small, working apps I built with HTML, CSS, and vanilla JavaScript.</p>
+        <div class="section-head reveal"><div><p class="section-kicker"><span>03</span> / TOOLKIT</p><h2 id="skills-heading">Tools, not <em>trophies.</em></h2></div><p>A focused stack for building responsive interfaces and useful web systems.</p></div>
+        <div class="skills-list reveal">
+          <div class="skill-row"><span class="skill-num">01</span><h3>Frontend</h3><p>HTML · CSS · JavaScript · Tailwind CSS · Bootstrap · SCSS</p></div>
+          <div class="skill-row"><span class="skill-num">02</span><h3>Backend</h3><p>PHP · Laravel · Blade</p></div>
+          <div class="skill-row"><span class="skill-num">03</span><h3>Databases</h3><p>MySQL · MariaDB · PostgreSQL · phpMyAdmin</p></div>
+          <div class="skill-row"><span class="skill-num">04</span><h3>Workflow</h3><p>Git · GitHub · XAMPP · Responsive design</p></div>
         </div>
-        <div class="lab-toolbar reveal" role="tablist" aria-label="Choose a mini system">
-          <button type="button" role="tab" class="lab-tab active" id="tab-inventory" data-demo-tab="inventory" aria-selected="true" aria-controls="panel-inventory" tabindex="0"><span class="lab-tab-symbol">▦</span><span>Inventory tracker</span><small>01</small></button>
-          <button type="button" role="tab" class="lab-tab" id="tab-tasks" data-demo-tab="tasks" aria-selected="false" aria-controls="panel-tasks" tabindex="-1"><span class="lab-tab-symbol">☑</span><span>Task manager</span><small>02</small></button>
-          <button type="button" role="tab" class="lab-tab" id="tab-grades" data-demo-tab="grades" aria-selected="false" aria-controls="panel-grades" tabindex="-1"><span class="lab-tab-symbol">◈</span><span>Grade calculator</span><small>03</small></button>
-        </div>
+      </div>
+    </section>
 
-        <div class="lab-panel" role="tabpanel" id="panel-inventory" aria-labelledby="tab-inventory" tabindex="0">
-          <div class="lab-info">
-            <div class="lab-info-overline"><span class="lab-live-dot"></span> LIVE SYSTEM · 01 / 03</div>
-            <div class="lab-info-icon">▦</div>
-            <h3>Inventory<br/><em>Tracker.</em></h3>
-            <p>Keep track of supplies. Add items, update quantities, and quickly spot products that need restocking.</p>
-            <div class="lab-tags"><span>CRUD basics</span><span>Search</span><span>LocalStorage</span></div>
-            <details class="lab-code-details"><summary><span>⌘</span> View JavaScript code <span aria-hidden="true">↗</span></summary><div class="lab-code-inner"><div class="lab-code-header"><span>inventory.js · example functions</span><button type="button" class="lab-copy" data-copy-snippet>Copy code</button></div><pre><code>// Inventory: add a product and adjust its stock
+<section aria-labelledby="lab-heading" class="section lab-section" id="mini-systems">
+<div class="container">
+<div class="section-head reveal lab-section-header"><div><div class="section-kicker">04 / WORKING LAB</div><h2 id="lab-heading">Built to <em>actually work.</em></h2></div><p>Three hands-on browser demos, using plain JavaScript and local storage. No sign-in needed.</p></div>
+<div aria-label="Choose a mini system" class="lab-toolbar reveal" role="tablist">
+<button aria-controls="panel-inventory" aria-selected="true" class="lab-tab active" data-demo-tab="inventory" id="tab-inventory" role="tab" tabindex="0" type="button"><span aria-hidden="true" class="lab-tab-symbol">▦</span><span>Inventory tracker</span><small>01</small></button>
+<button aria-controls="panel-tasks" aria-selected="false" class="lab-tab" data-demo-tab="tasks" id="tab-tasks" role="tab" tabindex="-1" type="button"><span aria-hidden="true" class="lab-tab-symbol">☑</span><span>Task manager</span><small>02</small></button>
+<button aria-controls="panel-grades" aria-selected="false" class="lab-tab" data-demo-tab="grades" id="tab-grades" role="tab" tabindex="-1" type="button"><span aria-hidden="true" class="lab-tab-symbol">◈</span><span>Grade calculator</span><small>03</small></button>
+</div>
+<div aria-labelledby="tab-inventory" class="lab-panel" id="panel-inventory" role="tabpanel" tabindex="0">
+<div class="lab-info">
+<div class="lab-info-overline">LOCAL DEMO · 01 / 03</div>
+<div aria-hidden="true" class="lab-info-icon">▦</div>
+<h3>Inventory<br/><em>Tracker.</em></h3>
+<p>Keep track of supplies. Add items, update quantities, and quickly spot products that need restocking.</p>
+<div class="lab-tags"><span>CRUD basics</span><span>Search</span><span>LocalStorage</span></div>
+<details class="lab-code-details"><summary><span>⌘</span> View JavaScript code <span aria-hidden="true">↗</span></summary><div class="lab-code-inner"><div class="lab-code-header"><span>inventory.js · example functions</span><button class="lab-copy" data-copy-snippet="" type="button">Copy code</button></div><pre><code>// Inventory: add a product and adjust its stock
 function addInventoryItem(name, quantity) {
   const item = {
     id: makeId(),
@@ -181,7 +188,7 @@ function addInventoryItem(name, quantity) {
     quantity: Number(quantity)
   };
   inventory.push(item);
-  saveData(&#x27;lj-inventory-v1&#x27;, inventory);
+  saveData('lj-inventory-v1', inventory);
   renderInventory();
 }
 
@@ -189,33 +196,32 @@ function changeStock(id, amount) {
   const item = inventory.find(item =&gt; item.id === id);
   if (!item) return;
   item.quantity = Math.max(0, item.quantity + amount);
-  saveData(&#x27;lj-inventory-v1&#x27;, inventory);
+  saveData('lj-inventory-v1', inventory);
   renderInventory();
-}</code></pre><p>Full working source: <strong>mini-systems.js</strong> in the ZIP download.</p></div></details>
-          </div>
-          <div class="lab-preview">
-            <div class="lab-preview-top"><span class="lab-traffic"><i></i><i></i><i></i></span><span>inventory-tracker / app</span><span class="lab-preview-live">● DEMO</span></div>
-            <div class="lab-app">
-              <div class="lab-app-heading"><div><span class="lab-app-eyebrow">STOCK CONTROL / SAMPLE DATA</span><h4>Inventory overview</h4></div><span class="lab-app-icon" aria-hidden="true">▦</span></div>
-              <div class="lab-kpis"><div><span>Products</span><strong id="inventory-count">0</strong></div><div><span>Low stock (≤ 5)</span><strong id="inventory-low">0</strong></div></div>
-              <form id="inventory-form" class="lab-form lab-form-inventory" autocomplete="off"><label>Product name<input id="inventory-name" name="name" type="text" maxlength="40" placeholder="e.g. Flash drive" required /></label><label>Quantity<input id="inventory-quantity" name="quantity" type="number" min="0" max="9999" value="10" required /></label><button type="submit" class="lab-action">+ Add item</button></form>
-              <div class="lab-list-heading"><strong>Product list</strong><label class="lab-search"><span aria-hidden="true">⌕</span><input id="inventory-search" type="search" placeholder="Search items" aria-label="Search inventory items" maxlength="40" /></label></div>
-              <div id="inventory-list" class="lab-list" aria-live="polite"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="lab-panel" role="tabpanel" id="panel-tasks" aria-labelledby="tab-tasks" tabindex="0" hidden>
-          <div class="lab-info">
-            <div class="lab-info-overline"><span class="lab-live-dot"></span> LIVE SYSTEM · 02 / 03</div>
-            <div class="lab-info-icon">☑</div>
-            <h3>Task<br/><em>Manager.</em></h3>
-            <p>Organize everyday tasks, assign a priority, mark work as done, and filter what's left to finish.</p>
-            <div class="lab-tags"><span>Task states</span><span>Filters</span><span>LocalStorage</span></div>
-            <details class="lab-code-details"><summary><span>⌘</span> View JavaScript code <span aria-hidden="true">↗</span></summary><div class="lab-code-inner"><div class="lab-code-header"><span>tasks.js · example functions</span><button type="button" class="lab-copy" data-copy-snippet>Copy code</button></div><pre><code>// Task manager: save a task, toggle its status
+}</code></pre><p>The full implementation is in <strong>mini-systems.js</strong>.</p></div></details>
+</div>
+<div class="lab-preview">
+<div class="lab-preview-top"><span class="lab-traffic"><i></i><i></i><i></i></span><span>inventory-tracker / app</span><span class="lab-preview-live">● DEMO</span></div>
+<div class="lab-app">
+<div class="lab-app-heading"><div><span class="lab-app-eyebrow">STOCK CONTROL / SAMPLE DATA</span><h4>Inventory overview</h4></div><span aria-hidden="true" class="lab-app-icon">▦</span></div>
+<div class="lab-kpis"><div><span>Products</span><strong id="inventory-count">0</strong></div><div><span>Low stock (≤ 5)</span><strong id="inventory-low">0</strong></div></div>
+<form autocomplete="off" class="lab-form lab-form-inventory" id="inventory-form"><label>Product name<input id="inventory-name" maxlength="40" name="name" placeholder="e.g. Flash drive" required="" type="text"/></label><label>Quantity<input id="inventory-quantity" max="9999" min="0" name="quantity" required="" type="number" value="10"/></label><button class="lab-action" type="submit">+ Add item</button></form>
+<div class="lab-list-heading"><strong>Product list</strong><label class="lab-search"><span aria-hidden="true">⌕</span><input aria-label="Search inventory items" id="inventory-search" maxlength="40" placeholder="Search items" type="search"/></label></div>
+<div aria-live="polite" class="lab-list" id="inventory-list"></div>
+</div>
+</div>
+</div>
+<div aria-labelledby="tab-tasks" class="lab-panel" hidden="" id="panel-tasks" role="tabpanel" tabindex="0">
+<div class="lab-info">
+<div class="lab-info-overline">LOCAL DEMO · 02 / 03</div>
+<div aria-hidden="true" class="lab-info-icon">☑</div>
+<h3>Task<br/><em>Manager.</em></h3>
+<p>Organize everyday tasks, assign a priority, mark work as done, and filter what's left to finish.</p>
+<div class="lab-tags"><span>Task states</span><span>Filters</span><span>LocalStorage</span></div>
+<details class="lab-code-details"><summary><span>⌘</span> View JavaScript code <span aria-hidden="true">↗</span></summary><div class="lab-code-inner"><div class="lab-code-header"><span>tasks.js · example functions</span><button class="lab-copy" data-copy-snippet="" type="button">Copy code</button></div><pre><code>// Task manager: save a task, toggle its status
 function addTask(title, priority) {
   tasks.unshift({ id: makeId(), title, priority, done: false });
-  saveData(&#x27;lj-tasks-v1&#x27;, tasks);
+  saveData('lj-tasks-v1', tasks);
   renderTasks();
 }
 
@@ -223,30 +229,29 @@ function toggleTask(id) {
   const task = tasks.find(task =&gt; task.id === id);
   if (!task) return;
   task.done = !task.done;
-  saveData(&#x27;lj-tasks-v1&#x27;, tasks);
+  saveData('lj-tasks-v1', tasks);
   renderTasks();
-}</code></pre><p>Full working source: <strong>mini-systems.js</strong> in the ZIP download.</p></div></details>
-          </div>
-          <div class="lab-preview">
-            <div class="lab-preview-top"><span class="lab-traffic"><i></i><i></i><i></i></span><span>task-manager / app</span><span class="lab-preview-live">● DEMO</span></div>
-            <div class="lab-app">
-              <div class="lab-app-heading"><div><span class="lab-app-eyebrow">FOCUS MODE / SAMPLE DATA</span><h4>Today's priorities</h4></div><span class="lab-app-icon" aria-hidden="true">☑</span></div>
-              <div class="lab-kpis"><div><span>Total tasks</span><strong id="tasks-total">0</strong></div><div><span>Completed</span><strong id="tasks-done">0</strong></div></div>
-              <form id="tasks-form" class="lab-form lab-form-tasks" autocomplete="off"><label>New task<input id="task-title" name="task" type="text" maxlength="70" placeholder="What needs to get done?" required /></label><label>Priority<select id="task-priority" name="priority"><option value="medium">Medium</option><option value="high">High</option><option value="low">Low</option></select></label><button type="submit" class="lab-action">+ Add task</button></form>
-              <div class="lab-list-heading"><strong>My tasks</strong><div class="lab-filter-row" role="group" aria-label="Filter tasks"><button type="button" class="lab-mini-filter active" data-task-filter="all" aria-pressed="true">All</button><button type="button" class="lab-mini-filter" data-task-filter="active" aria-pressed="false">Active</button><button type="button" class="lab-mini-filter" data-task-filter="done" aria-pressed="false">Done</button></div></div>
-              <div id="tasks-list" class="lab-list" aria-live="polite"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="lab-panel" role="tabpanel" id="panel-grades" aria-labelledby="tab-grades" tabindex="0" hidden>
-          <div class="lab-info">
-            <div class="lab-info-overline"><span class="lab-live-dot"></span> LIVE SYSTEM · 03 / 03</div>
-            <div class="lab-info-icon">◈</div>
-            <h3>Grade<br/><em>Calculator.</em></h3>
-            <p>Enter subjects, grades, and units to calculate a weighted average instantly. A practical little tool for student life.</p>
-            <div class="lab-tags"><span>Form validation</span><span>Weighted average</span><span>Math logic</span></div>
-            <details class="lab-code-details"><summary><span>⌘</span> View JavaScript code <span aria-hidden="true">↗</span></summary><div class="lab-code-inner"><div class="lab-code-header"><span>grades.js · core calculation</span><button type="button" class="lab-copy" data-copy-snippet>Copy code</button></div><pre><code>// Grade calculator: calculate a weighted average
+}</code></pre><p>The full implementation is in <strong>mini-systems.js</strong>.</p></div></details>
+</div>
+<div class="lab-preview">
+<div class="lab-preview-top"><span class="lab-traffic"><i></i><i></i><i></i></span><span>task-manager / app</span><span class="lab-preview-live">● DEMO</span></div>
+<div class="lab-app">
+<div class="lab-app-heading"><div><span class="lab-app-eyebrow">FOCUS MODE / SAMPLE DATA</span><h4>Today's priorities</h4></div><span aria-hidden="true" class="lab-app-icon">☑</span></div>
+<div class="lab-kpis"><div><span>Total tasks</span><strong id="tasks-total">0</strong></div><div><span>Completed</span><strong id="tasks-done">0</strong></div></div>
+<form autocomplete="off" class="lab-form lab-form-tasks" id="tasks-form"><label>New task<input id="task-title" maxlength="70" name="task" placeholder="What needs to get done?" required="" type="text"/></label><label>Priority<select id="task-priority" name="priority"><option value="medium">Medium</option><option value="high">High</option><option value="low">Low</option></select></label><button class="lab-action" type="submit">+ Add task</button></form>
+<div class="lab-list-heading"><strong>My tasks</strong><div aria-label="Filter tasks" class="lab-filter-row" role="group"><button aria-pressed="true" class="lab-mini-filter active" data-task-filter="all" type="button">All</button><button aria-pressed="false" class="lab-mini-filter" data-task-filter="active" type="button">Active</button><button aria-pressed="false" class="lab-mini-filter" data-task-filter="done" type="button">Done</button></div></div>
+<div aria-live="polite" class="lab-list" id="tasks-list"></div>
+</div>
+</div>
+</div>
+<div aria-labelledby="tab-grades" class="lab-panel" hidden="" id="panel-grades" role="tabpanel" tabindex="0">
+<div class="lab-info">
+<div class="lab-info-overline">LOCAL DEMO · 03 / 03</div>
+<div aria-hidden="true" class="lab-info-icon">◈</div>
+<h3>Grade<br/><em>Calculator.</em></h3>
+<p>Enter subjects, grades, and units to calculate a weighted average instantly. A practical little tool for student life.</p>
+<div class="lab-tags"><span>Form validation</span><span>Weighted average</span><span>Math logic</span></div>
+<details class="lab-code-details"><summary><span>⌘</span> View JavaScript code <span aria-hidden="true">↗</span></summary><div class="lab-code-inner"><div class="lab-code-header"><span>grades.js · core calculation</span><button class="lab-copy" data-copy-snippet="" type="button">Copy code</button></div><pre><code>// Grade calculator: calculate a weighted average
 function calculateAverage(subjects) {
   const totalUnits = subjects.reduce(
     (sum, subject) =&gt; sum + subject.units, 0
@@ -260,33 +265,45 @@ function calculateAverage(subjects) {
 
 // Demo passing benchmark: 75 / 100
 const average = calculateAverage(subjects);
-const passed = average !== null &amp;&amp; average &gt;= 75;</code></pre><p>Full working source: <strong>mini-systems.js</strong> in the ZIP download.</p></div></details>
-          </div>
-          <div class="lab-preview">
-            <div class="lab-preview-top"><span class="lab-traffic"><i></i><i></i><i></i></span><span>grade-calculator / app</span><span class="lab-preview-live">● DEMO</span></div>
-            <div class="lab-app">
-              <div class="lab-app-heading"><div><span class="lab-app-eyebrow">STUDENT TOOL / SAMPLE DATA</span><h4>My grade calculator</h4></div><span class="lab-app-icon" aria-hidden="true">◈</span></div>
-              <div class="lab-kpis lab-grades-kpis"><div><span>Weighted average / 100</span><strong id="grades-average">—</strong></div><div><span>Demo benchmark: 75</span><strong id="grades-status" class="lab-kpi-status">—</strong></div></div>
-              <form id="grades-form" class="lab-form lab-form-grades" autocomplete="off"><label>Subject<input id="grade-subject" name="subject" type="text" maxlength="42" placeholder="e.g. Web Development" required /></label><label>Grade (0–100)<input id="grade-score" name="grade" type="number" min="0" max="100" step="0.01" placeholder="92" required /></label><label>Units<input id="grade-units" name="units" type="number" min="1" max="6" step="1" value="3" required /></label><button type="submit" class="lab-action">+ Add subject</button></form>
-              <div class="lab-list-heading"><strong>Subject breakdown</strong><small>Average is weighted by units</small></div>
-              <div id="grades-list" class="lab-list" aria-live="polite"></div>
-              <p class="lab-disclaimer">75 is a sample passing benchmark only; this is not RTU's official grading formula.</p>
-            </div>
-          </div>
+const passed = average !== null &amp;&amp; average &gt;= 75;</code></pre><p>The full implementation is in <strong>mini-systems.js</strong>.</p></div></details>
+</div>
+<div class="lab-preview">
+<div class="lab-preview-top"><span class="lab-traffic"><i></i><i></i><i></i></span><span>grade-calculator / app</span><span class="lab-preview-live">● DEMO</span></div>
+<div class="lab-app">
+<div class="lab-app-heading"><div><span class="lab-app-eyebrow">STUDENT TOOL / SAMPLE DATA</span><h4>My grade calculator</h4></div><span aria-hidden="true" class="lab-app-icon">◈</span></div>
+<div class="lab-kpis lab-grades-kpis"><div><span>Weighted average / 100</span><strong id="grades-average">—</strong></div><div><span>Demo benchmark: 75</span><strong class="lab-kpi-status" id="grades-status">—</strong></div></div>
+<form autocomplete="off" class="lab-form lab-form-grades" id="grades-form"><label>Subject<input id="grade-subject" maxlength="42" name="subject" placeholder="e.g. Web Development" required="" type="text"/></label><label>Grade (0–100)<input id="grade-score" max="100" min="0" name="grade" placeholder="92" required="" step="0.01" type="number"/></label><label>Units<input id="grade-units" max="6" min="1" name="units" required="" step="1" type="number" value="3"/></label><button class="lab-action" type="submit">+ Add subject</button></form>
+<div class="lab-list-heading"><strong>Subject breakdown</strong><small>Average is weighted by units</small></div>
+<div aria-live="polite" class="lab-list" id="grades-list"></div>
+<p class="lab-disclaimer">75 is a sample passing benchmark only; this is not RTU's official grading formula.</p>
+</div>
+</div>
+</div>
+<p class="lab-footnote reveal">These are front-end exercises. Demo data stays in your browser; see mini-systems.js for the implementation.</p>
+</div>
+</section>
+
+    <section class="section journey-section" id="journey" aria-labelledby="journey-heading">
+      <div class="container split-section">
+        <div><p class="section-kicker"><span>05</span> / EXPERIENCE</p><h2 class="section-heading" id="journey-heading">Where I've<br/><em>learned.</em></h2></div>
+        <div class="timeline reveal">
+          <div class="timeline-item"><span class="timeline-date">2026 / DEGREE</span><div><h3>BS Information Technology</h3><p class="timeline-meta">Rizal Technological University</p><p>Graduated with a foundation in programming, software systems, and applied web development.</p></div></div>
+          <div class="timeline-item"><span class="timeline-date">2026 / CAPSTONE</span><div><h3>e-Kalinga</h3><p class="timeline-meta">Mandaluyong City Solo Parent Department</p><p>Developed a web platform for application workflows, membership records, renewals, and reporting.</p></div></div>
+          <div class="timeline-item"><span class="timeline-date">INTERNSHIP</span><div><h3>Web Development Intern</h3><p class="timeline-meta">Magellan Solutions</p><p>Worked with Laravel web systems, debugging, feature development, and maintenance.</p></div></div>
         </div>
-        <p class="lab-footnote reveal">✳ These are functional front-end practice demos. Data is stored locally in your browser, not sent to a server. Full JavaScript is included in the source ZIP.</p>
       </div>
     </section>
 
-    <section id="journey" class="section journey-section" aria-labelledby="journey-heading">
-      <div class="container journey-layout"><div class="journey-intro reveal"><div class="section-kicker"><span class="number-pill">05</span> HOW I GOT HERE</div><h2 id="journey-heading">My journey<br/>so <span class="word-italic muted-purple">far.</span></h2><p>Every experience has helped shape the developer I'm becoming — one line of code, one challenge, and one lesson at a time.</p></div><div class="timeline"><div class="timeline-item reveal"><div class="timeline-dot"></div><span class="timeline-date">2026</span><h3>BS Information Technology Graduate</h3><h4>Rizal Technological University</h4><p>Completed my BSIT degree, building a foundation in development, systems, and technology-driven problem solving.</p></div><div class="timeline-item reveal"><div class="timeline-dot"></div><span class="timeline-date">2026 · CAPSTONE</span><h3>e-Kalinga — BSIT Capstone Project</h3><h4>Mandaluyong City · Solo Parent Department</h4><p>Developed a web-based platform as our capstone project to help streamline solo-parent services, including applications, renewals, and administrative workflows.</p></div><div class="timeline-item reveal"><div class="timeline-dot"></div><span class="timeline-date">Internship</span><h3>Web Development Intern</h3><h4>Magellan Solutions</h4><p>Worked on Laravel-based web systems, development support, and website maintenance.</p></div></div></div>
+    <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="container contact-layout">
+        <div class="reveal"><p class="section-kicker"><span>06</span> / CONTACT</p><h2 class="contact-title" id="contact-heading">Have something<br/>in <em>mind?</em></h2><p>If you have an idea, an opportunity, or just want to talk web development, my inbox is open.</p><a class="contact-email" href="mailto:itablelove@gmail.com">itablelove@gmail.com <span aria-hidden="true">↗</span></a></div>
+        <div class="contact-links reveal"><p class="contact-links-heading">OTHER PLACES /</p><a href="https://github.com/eljayyit17-afk" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.facebook.com/lovejoy.itable" target="_blank" rel="noopener noreferrer">Facebook <span aria-hidden="true">↗</span></a><button id="copy-github" type="button">Copy GitHub username <span aria-hidden="true">⧉</span></button></div>
+      </div>
     </section>
-
-    <section id="contact" class="section contact-section" aria-labelledby="contact-heading"><div class="container"><div class="contact-panel reveal"><div class="contact-decor contact-star-one" aria-hidden="true">✳</div><div class="contact-decor contact-star-two" aria-hidden="true">✦</div><div class="section-kicker light-kicker">06 / LET'S MAKE SOMETHING GREAT</div><h2 id="contact-heading">Have an idea?<br/><span>Let's make it real.</span></h2><p>I'm always excited to learn, collaborate, and connect with people who love building meaningful things.</p><div class="contact-buttons"><a class="button contact-primary" href="https://github.com/eljayyit17-afk" target="_blank" rel="noopener noreferrer">Visit my GitHub <span aria-hidden="true">↗</span></a><button class="button contact-secondary" type="button" id="copy-github">Copy GitHub username <span aria-hidden="true">⧉</span></button></div><div class="social-links" aria-label="Social profiles"><a href="mailto:itablelove@gmail.com">✉ Email me</a><a href="https://www.facebook.com/lovejoy.itable" target="_blank" rel="noopener noreferrer">f Facebook</a><a href="https://github.com/eljayyit17-afk" target="_blank" rel="noopener noreferrer">⌘ GitHub</a></div><div class="contact-bottom"><span>LET'S CONNECT, ONE IDEA AT A TIME.</span><span class="contact-smiley">:)</span></div></div></div></section>
   </main>
-  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#top"><span class="brand-mark">LJ<span>.</span></span></a><p>Designed &amp; built with <span aria-label="love">♥</span> by Love Joy Angeles Itable.</p><a href="#top" class="back-top">Back to top ↑</a></div></footer>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#top"><span class="brand-prompt" aria-hidden="true">~/</span><span class="brand-mark">lovejoy<span>.dev</span></span></a><p>© 2026 LOVE JOY ITABLE · HTML / CSS / JS</p><a class="back-top" href="#top">BACK TO TOP ↑</a></div></footer>
 
-  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-inner"><button type="button" class="dialog-close" id="dialog-close" aria-label="Close project details">×</button><span class="dialog-kicker" id="dialog-kicker"></span><h2 id="dialog-title"></h2><p id="dialog-description"></p><div class="dialog-tech" id="dialog-tech"></div><a id="dialog-source" class="button button-primary" href="https://github.com/eljayyit17-afk/e-kalinga" target="_blank" rel="noopener noreferrer">View source on GitHub ↗</a></div></dialog>
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description"><div class="dialog-inner"><button class="dialog-close" id="dialog-close" type="button" aria-label="Close project details">×</button><span class="dialog-kicker" id="dialog-kicker"></span><h2 id="dialog-title"></h2><p id="dialog-description"></p><div class="dialog-tech" id="dialog-tech"></div><div class="project-actions dialog-actions"><a id="dialog-source" class="button button-primary" target="_blank" rel="noopener noreferrer" hidden>View Source Code <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a><a id="dialog-demo" class="button button-outline" target="_blank" rel="noopener noreferrer" hidden>Open Live System <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></div></div></dialog>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 </body>
 </html>
