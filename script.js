@@ -59,21 +59,20 @@ const PROJECTS = {
   demo: null // Replace with actual hosted Attendify URL
 },
 
-  visitor: {
-    kicker: 'PROJECT · MANAGEMENT SYSTEM',
-
-    title: 'Visitor Log System',
-
-    description:
-      'A project designed to simplify visitor entries and record keeping through a digital logging workflow. It reflects my interest in replacing repetitive manual processes with helpful web tools.',
-
-    tech: [
-      'Web Development',
-      'Digital Logging'
-    ],
-
-    source: null
-  },
+  visitorlog: {
+  kicker: 'PROJECT · VISITOR MANAGEMENT',
+  title: 'VisitFlow',
+  description: 'A web-based Visitor Log System built using Native PHP and MySQL. Features visitor registration, real-time check-in and check-out tracking, admin dashboard, visitor search, and downloadable reports.',
+  tech: [
+    'PHP',
+    'MySQL',
+    'Bootstrap 5',
+    'JavaScript',
+    'HTML',
+    'CSS'
+  ],
+  source: 'https://github.com/eljayyit17-afk/visitor-log-system'
+},
 
   bigfive: {
     kicker: 'PROJECT · ASSESSMENT',
